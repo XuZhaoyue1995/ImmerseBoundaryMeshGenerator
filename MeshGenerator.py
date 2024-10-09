@@ -163,7 +163,7 @@ def KernalMeshGeneration(totalLengthX, totalLengthY, totalLengthZ, centerX, cent
                 element_id += 1
                 
 def OuterMeshGeneration(outerLengthX, outerLengthY, outerLengthZ, centerOuterX, centerOuterY, centerOuterZ, innerLengthX, innerLengthY, innerLengthZ, centerInnerX, centerInnerY, centerInnerZ, gapX, gapY, gapZ, filename="meshOut.fdneut"):
-"""
+    """
 Generates an outer mesh grid for use in simulations requiring the Immersed Boundary Method, tailored for larger computational domains with a less dense mesh compared to the kernel mesh. This function specifically supports dual-layered mesh structures, with distinct parameters for inner and outer mesh dimensions and centers. The inner settings should correspond to the previously configured mesh.
 
     Args:
